@@ -21,23 +21,55 @@
   padding: 0;
 }
 
+.head-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  border-bottom: 1px solid #475569;
+  box-shadow: 2px 2px 5px;
+}
+
 .logo-container {
   display: flex;
   flex-direction: row;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
-  margin: auto;
   border: 3px solid#38bdf8;
   align-items: center;
   font-family: "infinity";
   color: #38bdf8;
   font-weight: 900;
+
+  cursor: pointer;
+  justify-self: center;
 }
 
 .letter {
+  align-self: flex-start;
   font-size: 45px;
 }
 .point {
   font-size: 50px;
+}
+
+/* Right side of header */
+
+.link-container {
+  display: flex;
+  gap: 25px;
+  font-family: "roboto";
+  font-size: 1.2rem;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #475569;
 }

@@ -1,0 +1,43 @@
+/* FONTS: */
+
+@font-face {
+  font-family: "dunkin";
+  src: url("/fonts/dunkin_bold-webfont.woff2") format("woff2"),
+    url("/fonts/dunkin_bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "infinity";
+  src: url("/fonts/madeinfinity_personaluse-thin-webfont.woff2") format("woff2"),
+    url("/fonts/dunkin_bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/fonts/roboto-condensed-webfont.woff2") format("woff2"),
+    url("/fonts/roboto-condensed-webfont.woff") format("woff");
+}
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+  border: 3px solid#38bdf8;
+  align-items: center;
+  font-family: "infinity";
+  color: #38bdf8;
+  font-weight: 900;
+}
+
+.letter {
+  font-size: 45px;
+}
+.point {
+  font-size: 50px;
+}

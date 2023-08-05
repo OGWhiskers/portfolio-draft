@@ -87,15 +87,20 @@ a:hover::after {
   opacity: 1;
 }
 a:visited {
-  color: #475569;
+  color: #f5f5f4;
 }
 
+.link-container a:visited {
+  color: #475569;
+}
 /* Project section */
 
 .project-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px repeat(5, 400px);
+
+  padding: 50px;
 }
 
 .project-heading {
@@ -109,14 +114,18 @@ a:visited {
 }
 
 .pro-image {
-  width: 45%;
+  width: 55%;
   height: 80%;
 }
 
 .descption-pro {
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   font-family: "roboto";
   font-size: 1rem;
+
+  gap: 20px;
 }
 .descrip-heading {
   font-weight: 900;
@@ -134,6 +143,7 @@ a:visited {
 .pro-5,
 .pro-6 {
   display: flex;
+  gap: 15px;
 }
 
 .pro-1 {
@@ -153,4 +163,31 @@ a:visited {
 }
 .pro-6 {
   grid-column: 3/5;
+}
+
+/* BTNS  */
+
+.btn-pro {
+  display: flex;
+  gap: 18px;
+}
+.btn {
+  text-align: center;
+  width: 100px;
+  padding: 8px;
+
+  border: 3px solid #38bdf8;
+  border-radius: 3px;
+  background-color: #38bdf8;
+
+  font-size: 14px;
+  font-family: "roboto";
+  font-weight: 600;
+  color: #f5f5f4;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #f5f5f4;
+  color: #38bdf8;
+  transition: 0.8s ease-in-out;
 }
